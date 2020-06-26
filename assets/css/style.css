@@ -1,0 +1,240 @@
+body {
+    background-color: #efefef;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1;
+    position: relative;
+}
+
+/* 
+.fixed-top {
+    background-color: blue;
+    transition: 1s;
+} */
+
+.navbar-brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+}
+
+/* End Navbar */
+
+/* Jumbotron Header */
+.jum-header {
+    background-image: url('../../assets/img/bg.jpg');
+    background-size: cover;
+    height: 520px;
+    text-align: center;
+    position: relative;
+}
+
+.jum-header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jum-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jum-header h2 {
+    font-size: 25px;
+    color: white;
+    margin-top: 70px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+}
+
+.jum-header p {
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+.jum-header hr {
+    width: 80px;
+    margin: 30px auto;
+    border-top: 4px solid white;
+}
+
+/* End jum-header */
+
+/* Form panel */
+.form-panel {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: -170px;
+    padding: 30px;
+    margin-bottom: 130px;
+}
+
+.form-panel form textarea {
+    border: none !important;
+    outline: none !important;
+    margin-bottom: 10px;
+}
+
+.form-panel form textarea:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+/* 
+.form-panel .icon {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.form-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.form-panel p {
+    font-size: 14px;
+    color: #000;
+    margin-top: -5px;
+    font-weight: 200;
+} */
+
+/* End Form panel */
+
+/* Info Panel */
+.info-panel .icon {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.info-panel p {
+    color: #666;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+/* End Info panel */
+
+/* Jumbotrol bawah */
+.jum-info {
+    background-image: url('../../assets/img/bg.jpg');
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.jum-info h2 {
+    font-size: 30px;
+}
+
+.jum-info p {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/* End jum-info */
+
+/* Footer */
+footer {
+    height: 50px;
+    background-color: #efefef;
+    line-height: 50px;
+    color: #555555;
+}
+
+/* Utility */
+.btn-outline-white {
+    text-transform: uppercase;
+    border: 1px solid white;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn-outline-white:hover {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 30px rgba(65, 64, 64, 0.8);
+}
+
+/* Dekstop */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B60BA;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jum-header {
+        margin-top: -75px;
+        height: 620px;
+    }
+
+    .jum-header h2 {
+        font-size: 33px;
+        margin-top: 120px;
+    }
+
+    .jum-header p {
+        font-size: 24px;
+    }
+
+    .garis {
+        background-color: #b3b2b2;
+        height: 1px;
+        position: relative;
+        transform: translateY(21px);
+    }
+
+    .jum-info {
+        height: 300px;
+    }
+
+    .jum-info h2 {
+        font-size: 50px;
+    }
+
+    .jum-info p {
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+}
